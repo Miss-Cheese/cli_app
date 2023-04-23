@@ -1,5 +1,22 @@
 # frozen_string_literal: true
 
+# Method to input the address from CSV
+# There should be a method to format the response
+
+# To-do:
+# - import address from CSV
+# - save API key safely
+
+def run_welcome
+    welcome_message
+    run
+end
+
+def welcome_message
+    puts "Welcome to Address Checker! Enter 'help' to see the help menu."
+    puts ENV["API_KEY"]
+end
+
 def help
   puts 'I accept the following commands:'
   puts '- help : displays this help message'
@@ -12,7 +29,7 @@ end
 
 def run
   loop do
-    puts 'Please enter a command:'
+    puts "Please enter address to validate:"
     users_response = gets.strip
 
     case users_response.downcase
