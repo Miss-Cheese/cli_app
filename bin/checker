@@ -2,7 +2,6 @@
 # frozen_string_literal: true
 
 require_relative '../lib/checker'
-# require_relative '../.env'
-require 'dotenv'
+require 'dotenv/load'
 
 run_welcome

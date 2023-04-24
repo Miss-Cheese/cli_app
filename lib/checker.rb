@@ -8,13 +8,12 @@
 # - save API key safely
 
 def run_welcome
-    welcome_message
-    run
+  welcome_message
+  run
 end
 
 def welcome_message
-    puts "Welcome to Address Checker! Enter 'help' to see the help menu."
-    puts ENV["API_KEY"]
+  puts "Welcome to Address Checker! Enter 'help' to see the help menu."
 end
 
 def help
@@ -29,7 +28,7 @@ end
 
 def run
   loop do
-    puts "Please enter address to validate:"
+    puts 'Please enter address to validate:'
     users_response = gets.strip
 
     case users_response.downcase
